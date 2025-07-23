@@ -2,51 +2,51 @@
 <html lang="zh-TW">
 <head>
   <meta charset="UTF-8">
-  <title>FM100.5 成功轉播站</title>
+  <title>維護紀錄總覽報表</title>
   <style>
     body {
-      font-family: "Segoe UI", sans-serif;
-      background-color: #f4f7f9;
       margin: 0;
-      padding: 40px 20px;
-      text-align: center;
+      padding: 0;
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f0f0f0;
     }
-    h1 {
-      color: #003f5c;
-      margin-bottom: 20px;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 12px 24px;
+    .top-bar {
       background-color: #004466;
       color: white;
+      padding: 10px 20px;
+      text-align: left;
+    }
+    .top-bar a {
+      color: white;
       text-decoration: none;
-      border-radius: 8px;
       font-weight: bold;
-      transition: background-color 0.3s ease;
+      font-size: 16px;
     }
-    .btn:hover {
-      background-color: #006699;
+    .report-container {
+      width: 100vw;
+      height: calc(100vh - 50px);
     }
-    audio {
+    iframe {
+      border: none;
       width: 100%;
-      max-width: 600px;
-      margin-top: 20px;
+      height: 100%;
     }
   </style>
 </head>
 <body>
 
-  <h1>🎧 FM100.5 成功轉播站</h1>
+  <div class="top-bar">
+    <a href="https://sites.google.com/d/1JmolMMOa3sgCZf6eYacE13gnTCZgd8a/p/15Hdk_93LgqbJYaRYBAYwbz-vMLrXpLDQ/edit">
+      ← 返回臺東分臺工程首頁
+    </a>
+  </div>
 
-  <audio controls>
-    <source src="http://211.75.60.169:5100/mp3_128.mp3" type="audio/mpeg">
-    您的瀏覽器不支援音訊播放。
-  </audio>
-
-  <br>
-  <a class="btn" href="https://sites.google.com/view/n1rtt/%E9%A6%96%E9%A0%81?authuser=0">← 回到臺東分臺工程首頁</a>
+  <div class="report-container">
+    <iframe 
+      src="https://lookerstudio.google.com/embed/reporting/aa7e5246-7508-4607-aa09-d652367dc05e/page/ULiMF"
+      allowfullscreen
+    ></iframe>
+  </div>
 
 </body>
 </html>
