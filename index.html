@@ -2,25 +2,51 @@
 <html lang="zh-TW">
 <head>
   <meta charset="UTF-8">
-  <title>Looker Studio 嵌入頁</title>
+  <title>FM100.5 成功轉播站</title>
   <style>
-    html, body {
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f4f7f9;
       margin: 0;
-      padding: 0;
-      height: 100%;
-      overflow: hidden;
+      padding: 40px 20px;
+      text-align: center;
     }
-    iframe {
-      border: 0;
-      width: 100vw;
-      height: 100vh;
+    h1 {
+      color: #003f5c;
+      margin-bottom: 20px;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 24px;
+      background-color: #004466;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #006699;
+    }
+    audio {
+      width: 100%;
+      max-width: 600px;
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
-  <iframe 
-    src="https://lookerstudio.google.com/embed/reporting/aa7e5246-7508-4607-aa09-d652367dc05e/page/ULiMF?s=ne4VLn2rfmw" 
-    allowfullscreen>
-  </iframe>
+
+  <h1>🎧 FM100.5 成功轉播站</h1>
+
+  <audio controls>
+    <source src="http://211.75.60.169:5100/mp3_128.mp3" type="audio/mpeg">
+    您的瀏覽器不支援音訊播放。
+  </audio>
+
+  <br>
+  <a class="btn" href="https://sites.google.com/your-site-url">← 回到臺東分臺工程首頁</a>
+
 </body>
 </html>
